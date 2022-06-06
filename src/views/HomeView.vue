@@ -3,13 +3,15 @@
     <Navbar />
     <div class="container">
       <Hero />
+    </div> <br/>
+    <div class="container">
+   <CardVue />
+    </div> <br/>
+    <div class="container">
+      <Content />
     </div>
+     
 
-    <div class="row mb-3">
-      <div class="col-md-3 mt-4">
-        <CardVue />
-      </div>
-    </div>
   </div>
 </template>
 
@@ -17,6 +19,7 @@
 import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
 import CardVue from "@/components/CardVue.vue";
+import Content from "@/components/Content.vue";
 
 export default {
   name: "HomeView",
@@ -24,6 +27,7 @@ export default {
     Navbar,
     Hero,
     CardVue,
+    Content,
   },
 };
 </script>

@@ -6,15 +6,14 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <router-link class="nav-link" to="/keranjang">
-            Home
-          </router-link>
-        </li> 
+          <router-link class="nav-link" to="/keranjang"> Home </router-link>
+        </li>
         <li class="nav-item">
           <router-link class="btn btn-lg btn-success mr-2" to="/keranjang">
             Sign In
           </router-link>
-        </li> <br/>
+        </li>
+        <br />
         <li class="nav-item">
           <router-link class="btn btn-lg btn-success" to="/keranjang">
             Sign Up
