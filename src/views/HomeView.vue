@@ -1,17 +1,12 @@
 <template>
   <div class="home">
     <Navbar />
+    <Hero />
     <div class="container">
-      <Hero />
-    </div> <br/>
-    <div class="container">
-   <CardVue />
-    </div> <br/>
-    <div class="container">
-      <Content />
+      <CardVue />
     </div>
-     
-
+    <br />
+      <Content />
   </div>
 </template>
 

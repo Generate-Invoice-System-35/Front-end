@@ -1,21 +1,23 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="light">
-      <b-navbar-brand href="#"><strong>Fatture</strong></b-navbar-brand>
+      <b-navbar-brand href="#">
+        <img src="../assets/images/logo_fatture.png" width="150px">
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto mr-3">
         <li class="nav-item">
-          <router-link class="nav-link" to="/keranjang"> Home </router-link>
+          <router-link class="nav-link" to="/"> Home </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="btn btn-lg btn-success mr-2" to="/keranjang">
+          <router-link class="btn btn-light mr-3" style="color: black;" to="/keranjang">
             Sign In
           </router-link>
         </li>
         <br />
         <li class="nav-item">
-          <router-link class="btn btn-lg btn-success" to="/keranjang">
+          <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/keranjang">
             Sign Up
           </router-link>
         </li>
