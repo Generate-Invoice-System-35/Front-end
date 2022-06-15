@@ -1,14 +1,12 @@
 #app {
 font-family: 'poppins' sans-serif;
+background-image: linear-gradient(#BEF9F9,#e3ffb5, #e29cf2,#ffff);
+background-repeat: no-repeat;
+background-position: left;
 }
 
 .btn btn-lg btn-success {
     font-weight: bold;
-}
-.home {
-    background-color: white;
-    background-image: url("C:\Users\ASUS\OneDrive\Pictures\Screenshots\2022-06-09.png");
-    background-repeat: repeat-x;
 }
 
 .right-content-enter {
@@ -18,3 +16,4 @@ font-family: 'poppins' sans-serif;
 .nav-link {
     font-weight: bold;
 }
+

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import UploadView from '../views/UploadView.vue'
+import UploadsView from '../views/UploadsView.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/upload',
-    name: 'UploadView',
-    component: UploadView
+    path: '/uploads',
+    name: 'UploadsView',
+    component: UploadsView
   },
   {
     path: '/about',
