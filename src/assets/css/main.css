@@ -1,8 +1,10 @@
 #app {
 font-family: 'poppins' sans-serif;
-background-image: linear-gradient(#BEF9F9,#e3ffb5, #e29cf2,#ffff);
-background-repeat: no-repeat;
-background-position: left;
+    background-color: white;
+    background-image: url("D:\Downloads\Telegram Desktop\background_1.png");
+    background-repeat: no-repeat;
+    background-size: 1265px;
+    height: 650px;
 }
 
 .btn btn-lg btn-success {

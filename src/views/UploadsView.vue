@@ -9,35 +9,17 @@
         <li class="nav-item">
           <router-link class="nav-link" to="/"> Home </router-link>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="coral"
-              class="bi bi-person-circle"
-              viewBox="0 0 18 18"
-            >
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-              <path
-                fill-rule="evenodd"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-              />
-            </svg>
-            Username
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </li>
+
+        <b-dropdown
+          id="dropdown-right"
+          right
+          text="Username"
+          variant="outline-dark"
+          class="m-2"
+          size="sm"
+        >
+          <b-dropdown-item href="/">Logout</b-dropdown-item>
+        </b-dropdown>
       </ul>
     </b-navbar>
     <br />
@@ -59,7 +41,7 @@
             border-color: coral;
           "
         >
-          <div class="card-body" style="color: darkorange">
+          <div class="card-body" style="color: darkorange; text-align: center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="70"
@@ -92,4 +74,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>
