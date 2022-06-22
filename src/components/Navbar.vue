@@ -11,7 +11,7 @@
           <router-link class="nav-link" to="/"> Home </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="btn btn-light mr-3" style="color: black;" to="/keranjang">
+          <router-link class="btn btn-light mr-3" style="color: black;" to="/Dashboard">
             Sign In
           </router-link>
         </li>

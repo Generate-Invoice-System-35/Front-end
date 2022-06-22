@@ -5,9 +5,16 @@ font-family: 'poppins' sans-serif;
 .btn btn-lg btn-success {
     font-weight: bold;
 }
+
 .home {
     background-color: white;
-    background-image: url("C:\Users\ASUS\OneDrive\Pictures\Screenshots\2022-06-09.png");
+    background-image: url("../images/background.png"); 
+    background-repeat: repeat-x;
+}
+
+.dashboard {
+    background-color: white;
+    background-image: url("../images/background.png"); 
     background-repeat: repeat-x;
 }
 
