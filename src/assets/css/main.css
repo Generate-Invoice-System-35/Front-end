@@ -1,14 +1,13 @@
 #app {
 font-family: 'poppins' sans-serif;
+    background-image: url(D:\Documents\GitHub\Front-end\src\assets\images\background.png);
+    background-repeat: no-repeat;
+    background-size: 1265px;
+    height: 650px;
 }
 
 .btn btn-lg btn-success {
     font-weight: bold;
-}
-.home {
-    background-color: white;
-    background-image: url("C:\Users\ASUS\OneDrive\Pictures\Screenshots\2022-06-09.png");
-    background-repeat: repeat-x;
 }
 
 .right-content-enter {
