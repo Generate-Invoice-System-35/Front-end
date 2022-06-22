@@ -3,7 +3,7 @@
       <h1 >Invoice</h1>
       <br>
       <button class="upload" style="color:white;">Upload</button>
-      <div><br></div>
+      <div><br><br></div>
       <table class="invoice">
         <thead>
           <tr>
