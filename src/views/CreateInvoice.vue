@@ -71,9 +71,7 @@
                     <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                       <div class="invoice-details">
                         <address>
-                          <strong>Customer</strong> <br />
-                          Alex Maxwell<br />
-                          150-600 Church Street, Florida, USA
+                          <strong>Customer:</strong>
                         </address>
                       </div>
                     </div>
@@ -90,6 +88,7 @@
                       </div>
                     </div>
                   </div>
+                  <h6>Invoice Lines</h6>
                   <!-- Row end -->
                 </div>
                 <div class="invoice-body">
@@ -110,61 +109,34 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td>
-                                Wordpress Template
-                                <p class="m-0 text-muted">
-                                  Reference site about Lorem Ipsum, giving
-                                  information on its origins.
-                                </p>
-                              </td>
-                              <td>#50000981</td>
-                              <td>9</td>
-                              <td>$5000.00</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>
-                                Maxwell Admin Template
-                                <p class="m-0 text-muted">
-                                  As well as a random Lipsum generator.
-                                </p>
-                              </td>
-                              <td>#50000126</td>
-                              <td>5</td>
-                              <td>$100.00</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>
-                                Unify Admin Template
-                                <p class="m-0 text-muted">
-                                  Lorem ipsum has become the industry standard.
-                                </p>
-                              </td>
-                              <td>#50000821</td>
-                              <td>6</td>
-                              <td>$49.99</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>&nbsp;</td>
-                              <td colspan="2">
-                                <p>
-                                  Subtotal<br />
-                                  Shipping &amp; Handling<br />
-                                  Tax<br />
-                                </p>
-                                <h5 class="text-success">
-                                  <strong>Grand Total</strong>
-                                </h5>
-                              </td>
-                              <td>
-                                <p>
-                                  $5000.00<br />
-                                  $100.00<br />
-                                  $49.00<br />
-                                </p>
-                                <h5 class="text-success">
-                                  <strong>$5150.99</strong>
-                                </h5>
-                              </td>
+                              <td colspan="3"></td>
+                              <td></td>
+                               <td></td>
+                               <td><p><strong>Total:</strong></p></td>
                             </tr>
                           </tbody>
                         </table>
