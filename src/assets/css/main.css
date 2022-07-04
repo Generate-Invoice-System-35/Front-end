@@ -3,9 +3,9 @@ font-family: 'poppins' sans-serif;
 background-color: white;
 background-image: url("../images/background.png"); 
 background-repeat: no-repeat;
-background-size: auto;
+background-size: cover;
+height: 100%;
 }
-
 
 .btn btn-lg btn-success {
     font-weight: bold;
