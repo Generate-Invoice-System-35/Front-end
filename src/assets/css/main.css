@@ -1,21 +1,12 @@
 #app {
 font-family: 'poppins' sans-serif;
+background-color: white;
+background-image: url("../images/background.png"); 
+background-repeat: repeat-x;
 }
 
 .btn btn-lg btn-success {
     font-weight: bold;
-}
-
-.home {
-    background-color: white;
-    background-image: url("../images/background.png"); 
-    background-repeat: repeat-x;
-}
-
-.dashboard {
-    background-color: white;
-    background-image: url("../images/background.png"); 
-    background-repeat: repeat-x;
 }
 
 .right-content-enter {
