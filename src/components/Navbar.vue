@@ -11,13 +11,13 @@
           <router-link class="nav-link" to="/"> Home </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="btn btn-light mr-3" style="color: black;" to="/keranjang">
+          <router-link class="btn btn-light mr-3" style="color: black;" to="/login">
             Sign In
           </router-link>
         </li>
         <br />
         <li class="nav-item">
-          <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/keranjang">
+          <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/">
             Sign Up
           </router-link>
         </li>
