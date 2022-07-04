@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UploadsView from '../views/UploadsView.vue'
 import CreateInvoice from '../views/CreateInvoice.vue'
-
+import PreviewInvoice from '../views/PreviewInvoice.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,6 +21,11 @@ const routes = [
     path: '/createinvoice',
     name: 'createinvoice',
     component: CreateInvoice
+  },
+  {
+    path: '/previewinvoice',
+    name: 'previewinvoice',
+    component: PreviewInvoice
   },
   {
     path: '/about',
