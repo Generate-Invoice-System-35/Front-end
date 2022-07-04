@@ -65,12 +65,15 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
+
 export default {
-  name: "UploadFiles",
+    name: "UploadFiles",
+    components: {  }
 };
 </script>
 

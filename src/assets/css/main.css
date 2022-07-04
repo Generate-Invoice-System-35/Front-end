@@ -1,10 +1,9 @@
 #app {
 font-family: 'poppins' sans-serif;
-    background-color: white;
-    background-image: url(D:\Documents\GitHub\Front-end\src\assets\images\background.png);
-    background-repeat: no-repeat;
-    background-size: 1265px;
-    height: 650px;
+background-color: white;
+background-image: url("../images/background.png"); 
+background-repeat: no-repeat;
+background-size: auto;
 }
 
 

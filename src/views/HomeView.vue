@@ -7,6 +7,7 @@
     </div>
     <br />
       <Content />
+
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Hero from "@/components/Hero.vue";
 import CardVue from "@/components/CardVue.vue";
 import Content from "@/components/Content.vue";
 
+
 export default {
   name: "HomeView",
   components: {
@@ -23,6 +25,7 @@ export default {
     Hero,
     CardVue,
     Content,
+
   },
 };
 </script>
