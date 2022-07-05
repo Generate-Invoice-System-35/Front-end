@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import UploadsView from '../views/UploadsView.vue'
 import CreateInvoice from '../views/CreateInvoice.vue'
 import LoginPage from '../views/LoginPage.vue'
+import PreviewInvoice from '../views/PreviewInvoice.vue'
+
 
 Vue.use(VueRouter)
 
@@ -27,7 +29,13 @@ const routes = [
     path: '/login',
     name: 'loginpage',
     component: LoginPage
-  }
+  },
+  {
+    path: '/previewinvoice',
+    name: 'previewinvoice',
+    component: PreviewInvoice
+  },
+
 ]
 
 const router = new VueRouter({
