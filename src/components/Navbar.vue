@@ -17,7 +17,7 @@
         </li>
         <br />
         <li class="nav-item">
-          <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/">
+          <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/register">
             Sign Up
           </router-link>
         </li>
