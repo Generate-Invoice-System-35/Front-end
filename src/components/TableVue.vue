@@ -12,8 +12,8 @@
             <th>Customer</th>
             <th>Invoice Date</th>
             <th>Due Date</th>
-            <th>Tax Number</th>
-            <th>Tax Excluded</th>
+            <th>Email</th>
+            <th>numberphone</th>
             <th>Total</th>
             <th>Payment Statue</th>
           </tr>
@@ -24,9 +24,9 @@
             <td>{{name.Customer}}</td>
             <td>{{name.InvoiceDate}}</td>
             <td>{{name.DueDate}}</td>
-            <td>Rp {{name.TaxNumber}}</td>
-            <td>Rp {{name.TaxExcluded}}</td>
-            <td>{{name.Total}}</td>
+            <td>{{name.Email}}</td>
+            <td>{{name.Numberphone}}</td>
+            <td>Rp {{name.Total}}</td>
             <td>{{name.PaymentStatue}}</td>
           </tr>
         </tbody>
@@ -40,16 +40,16 @@ export default {
   data() {
     return {
       info: [
-        { Number: "1", Customer: "Angga", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "OVO", },
-        { Number: "2", Customer: "Intan", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Dana", },
-        { Number: "3", Customer: "Aurellia", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Alfamart", },
-        { Number: "4", Customer: "Murfid", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Indomart", },
-        { Number: "5", Customer: "Prila", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "OVO", },
-        { Number: "6", Customer: "Jovin", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "PayPal", },
-        { Number: "7", Customer: "Rima", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Alfamart", },
-        { Number: "8", Customer: "Made", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Dana", },
-        { Number: "9", Customer: "Novita", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "PayPal", },
-        { Number: "10", Customer: "Kristina", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", TaxNumber: "100.000", TaxExcluded: "10.000", Total: "110.000", PaymentStatue: "Indomart", },
+        { Number: "1", Customer: "Angga", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
+        { Number: "2", Customer: "Intan", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Not Paid", },
+        { Number: "3", Customer: "Aurellia", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
+        { Number: "4", Customer: "Murfid", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Paid", },
+        { Number: "5", Customer: "Prila", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
+        { Number: "6", Customer: "Jovin", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
+        { Number: "7", Customer: "Rima", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
+        { Number: "8", Customer: "Made", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Paid", },
+        { Number: "9", Customer: "Novita", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Not Paid", },
+        { Number: "10", Customer: "Kristina", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", Numberphone: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
       ]
     }
   }
