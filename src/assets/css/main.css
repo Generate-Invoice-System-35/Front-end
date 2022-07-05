@@ -4,7 +4,9 @@ background-color: white;
 background-image: url("../images/background.png"); 
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 750px;
+
+min-height: 950px;
+
 }
 
 .btn btn-lg btn-success {
@@ -20,8 +22,7 @@ min-height: 750px;
 }
 
 body {
-    color: #2e323c;
-    background: #f5f6fa;
+
     position: relative;
     height: 100%;
 }
