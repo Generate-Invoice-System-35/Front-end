@@ -8,8 +8,8 @@
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <ul class="navbar-nav ml-auto mr-3">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/"> Home </router-link>
+            <li class="nav-item" >
+              <router-link class="nav-link" to="/" style="padding-right:53rem"> Home </router-link>
             </li>
           </ul>
        </b-navbar>
