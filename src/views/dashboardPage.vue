@@ -1,14 +1,21 @@
 <template>
-  <div class="Dashboard">
-
+  <div class="dashboard">
+    <Navbar />
+    <TableVue />
   </div>
 </template>
 
 
 <script>
+import Navbar from "@/components/Navbar.vue";
+import TableVue from "@/components/TableVue.vue";
+
+
  export default {
     name: "dashboardPage",
-    data: () => ({
-    }),
-}
+    components: {
+    Navbar,
+    TableVue
+},
+};
 </script>
