@@ -2,7 +2,8 @@
     <div class="table">
       <h1 >Invoice</h1>
       <br>
-      <button class="upload" style="color:white;">Upload</button>
+      <router-link class="upload" to="/uploads" tag="button" style="color:white;">Upload</router-link>
+      <router-link class="generate" to="/createinvoice" tag="button" style="color:white;">Generate</router-link>
       <div></div>
       <div><br><br></div>
       <table class="invoice">
@@ -74,6 +75,15 @@ export default {
   height: 57px;
   background: linear-gradient(90deg, #F75000 0%, #FF9F71 100%);
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
-
+  margin: 10px;
 }
+
+.generate{
+  
+  width: 141px;
+  height: 57px;
+  background: #09273E;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+}
+
 </style>

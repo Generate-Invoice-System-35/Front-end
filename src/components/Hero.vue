@@ -17,7 +17,7 @@
                 Online invoicing generator that helps you to create <br/>
                 professional invoices and send payment reminders.
               </p> 
-              <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/createinvoice">
+              <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/login">
                 Start Now. it's Free
               </router-link>
             </div>

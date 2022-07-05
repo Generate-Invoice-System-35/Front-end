@@ -35,7 +35,7 @@
           class="card"
           style="
             width: 70rem;
-            height: 230px;
+            height: 350px;
             border-style: dashed;
             align-items: center;
             border-color: coral;

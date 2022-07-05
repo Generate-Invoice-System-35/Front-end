@@ -80,7 +80,7 @@
         </div>
 
         <br>
-        <button class="SignUpButton">Start</button>
+         <router-link class="SignUpButton" to="/dashboard" tag="button">Start</router-link>
     </div>
 
   </div>
