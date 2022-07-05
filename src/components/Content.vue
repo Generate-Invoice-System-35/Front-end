@@ -15,7 +15,7 @@
                 Automatically bill based on sales orders, supply orders, <br/>
                 contracts, or time and materials
               </p>
-              <router-link class="btn btn-warning" style="background-color: #ff9f71 #ff9f71; color: white;" to="/uploads">
+              <router-link class="btn btn-warning" style="background-color: #ff9f71 #ff9f71; color: white;" to="/register">
                 Register
               </router-link>
             </div>
