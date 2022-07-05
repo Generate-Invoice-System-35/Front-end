@@ -6,7 +6,7 @@ import CreateInvoice from '../views/CreateInvoice.vue'
 import LoginPage from '../views/LoginPage.vue'
 import RegisterPage from '../views/RegisterPage.vue'
 import PreviewInvoice from '../views/PreviewInvoice.vue'
-import dashboardPage from '../views/dashboardPage.vue'
+import DashboardPage from '../views/DashboardPage.vue'
 
 Vue.use(VueRouter)
 
@@ -44,7 +44,7 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboardPage',
-    component: dashboardPage
+    component: DashboardPage
   },
 
 ]
