@@ -79,11 +79,11 @@
         </div>
 
         <div class="input-group">
-          <label for="number_phone"><strong>No. Hp</strong></label>
-          <input id="number_phone" 
-                 v-model="number_phone" 
-                 type="number_phone" 
-                 name="number_phone" />
+          <label for="phone_number"><strong>No. Hp</strong></label>
+          <input id="phone_number" 
+                 v-model="phone_number" 
+                 type="phone_number" 
+                 name="phone_number" />
         </div>
 
         <div class="input-group">
@@ -112,7 +112,7 @@ export default {
         password: null,
         username:null,
         email: "",
-        number_phone: "",
+        phone_number: "",
         address: "",
        };
     },
@@ -132,7 +132,7 @@ export default {
             username: this.username,
             password: this.password,
             email: this.password,
-            number_phone: this.number_phone,
+            phone_number: this.phone_number,
             address: this.address,
           });
           if (result) {

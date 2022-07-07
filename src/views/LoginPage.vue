@@ -99,7 +99,7 @@ export default {
             if (result) {
               this.$router.push('/dashboard');
             } else {
-              alert ("Password atau Username salah", this.errorMsg);
+              this.errorText = this.$store.state.auth.info;
             }
           }
       } 

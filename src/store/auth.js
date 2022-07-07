@@ -25,7 +25,7 @@ const actions = {
           username: credentials.username,
           password: credentials.password,
           email: credentials.email,
-          number_phone: credentials.number_phone,
+          phone_number: credentials.phone_number,
           address: credentials.address,
         }
         // {
