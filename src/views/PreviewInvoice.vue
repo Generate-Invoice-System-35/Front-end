@@ -109,7 +109,7 @@
       <router-link
         class="btn btn-link"
         style="background-color: #ff9f71; color: white; float:right;"
-        to="/"
+        to="/createinvoice"
       >
         Back
       </router-link>
