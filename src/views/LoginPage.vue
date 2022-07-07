@@ -38,7 +38,7 @@
                  name="username" />
         </div>
 
-        <label class="label">Password</label>
+        <label class="label"><strong>Password</strong></label>
               <div class="field has-addons">
                 <div class="control is-expanded">
                   <input
@@ -88,10 +88,21 @@ export default {
       methods: {
         toggleShow() {
         this.showPassword = !this.showPassword;
-        }
+        },
+
+          async doLogin() {
+            const result = await this.$store.dispatch("auth/login", {
+              username: this.username,
+              password: this.password,
+            });
+
+            if (result) {
+              this.$router.push('/dashboard');
+            } else {
+              alert ("Password atau Username salah", this.errorMsg);
+            }
+          }
       } 
-
-
 
 };
 </script>

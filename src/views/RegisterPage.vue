@@ -46,7 +46,7 @@
                  name="username" />
         </div>
 
-        <label class="label">Password</label>
+        <label class="label"><strong>Password</strong></label>
               <div class="field has-addons">
                 <div class="control is-expanded">
                   <input
@@ -95,7 +95,7 @@
         </div>
 
         <br>
-         <button class="SignUpButton" @click="doRegister" >Start</button>
+         <button class="SignUpButton" @click="doRegister()" >Start</button>
     </div>
 
   </div>
@@ -124,8 +124,25 @@ export default {
       methods: {
         toggleShow() {
         this.showPassword = !this.showPassword;
-        }
-      } 
+        },
+
+        async doRegister() {
+          const result = await this.$store.dispatch("auth/register", {
+            name: this.name,
+            username: this.username,
+            password: this.password,
+            email: this.password,
+            number_phone: this.number_phone,
+            address: this.address,
+          });
+          if (result) {
+            alert("Register telah berhasil");
+            this.$router.push("/dashboard");
+          } else {
+            alert("Register gagal", this.errorMsg);
+          }
+        },
+      }, 
 
 
 
