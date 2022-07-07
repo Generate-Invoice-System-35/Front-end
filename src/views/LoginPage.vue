@@ -54,17 +54,10 @@
                     v-model="password"
                   />
                 </div>
+
                 <div class="buttonEyes">
-                  <button class="button" @click="toggleShow">
-                    <span class="icon is-medium is-right">
-                      <i
-                        class="fas"
-                        :class="{
-                          'fas-eye-slash-fill': showPassword,
-                          'fas-eye-fill': !showPassword
-                        }"
-                      ></i>> 
-                    </span>
+                  <button class="buttonEye" @click="toggleShow">
+                      <b-icon icon='eye-slash' variant="light"></b-icon>
                   </button>
                 </div>
               </div>
@@ -162,6 +155,16 @@ select {
 }
 
 .buttonEyes{
-  margin: -47px 0 0 525px
+  margin: -66px 0 0 510px
+}
+
+.buttonEye{
+  background: #572984;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 </style>
