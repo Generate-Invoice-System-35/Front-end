@@ -1,5 +1,4 @@
-import axios from 'axios';
-import { LayoutPlugin } from 'bootstrap-vue';
+import axios from "axios";
 const apiHost = "http://api.calorilin.me";
 
 const state = () => ({

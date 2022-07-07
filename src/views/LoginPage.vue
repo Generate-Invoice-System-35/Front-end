@@ -63,7 +63,7 @@
               </div>
 
         <br>
-        <router-link class="SignINButton" to="/dashboard" tag="button">SIGN IN</router-link>
+        <button class="SignINButton" @click="doLogin()">SIGN IN</button>
     </div>
 
   </div>
@@ -90,6 +90,9 @@ export default {
         this.showPassword = !this.showPassword;
         }
       } 
+
+
+
 };
 </script>
 

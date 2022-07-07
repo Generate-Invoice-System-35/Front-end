@@ -95,7 +95,7 @@
         </div>
 
         <br>
-         <router-link class="SignUpButton" to="/dashboard" tag="button">Start</router-link>
+         <button class="SignUpButton" @click="doRegister" >Start</button>
     </div>
 
   </div>
@@ -112,6 +112,7 @@ export default {
         password: null,
         username:null,
         email: "",
+        number_phone: "",
         address: "",
        };
     },
@@ -125,6 +126,9 @@ export default {
         this.showPassword = !this.showPassword;
         }
       } 
+
+
+
 };
 </script>
 
