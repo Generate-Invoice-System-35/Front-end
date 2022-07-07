@@ -31,11 +31,11 @@
       <br>
 
         <div class="input-group">
-          <label for="nama"><strong>Nama</strong></label>
-          <input id="nama" 
-                 v-model="nama" 
-                 type="nama" 
-                 name="nama" />
+          <label for="name"><strong>Nama</strong></label>
+          <input id="name" 
+                 v-model="name" 
+                 type="name" 
+                 name="name" />
         </div>
 
         <div class="input-group">
@@ -46,14 +46,36 @@
                  name="username" />
         </div>
 
-        <div class="input-group">
-          <label for="password"><strong>Password</strong></label>
-          <input id="password" 
-                 v-model="password" 
-                 type="password" 
-                 name="password" />
-          <button>Show Password</button>
-        </div>
+        <label class="label">Password</label>
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <input
+                    v-if="showPassword"
+                    type="text"
+                    class="input"
+                    v-model="password"
+                  />
+                  <input
+                    v-else
+                    type="password"
+                    class="input"
+                    v-model="password"
+                  />
+                </div>
+                <div class="buttonEyes">
+                  <button class="button" @click="toggleShow">
+                    <span class="icon is-small is-right">
+                      <i
+                        class="fas"
+                        :class="{
+                          'fas-eye-slash-fill': showPassword,
+                          'fas-eye-fill': !showPassword
+                        }"
+                      ></i>> 
+                    </span>
+                  </button>
+                </div>
+              </div>
 
         <div class="input-group">
           <label for="email"><strong>Email</strong></label>
@@ -64,19 +86,19 @@
         </div>
 
         <div class="input-group">
-          <label for="numberphone"><strong>No. Hp</strong></label>
-          <input id="numberphone" 
-                 v-model="numberphone" 
-                 type="numberphone" 
-                 name="numberphone" />
+          <label for="number_phone"><strong>No. Hp</strong></label>
+          <input id="number_phone" 
+                 v-model="number_phone" 
+                 type="number_phone" 
+                 name="number_phone" />
         </div>
 
         <div class="input-group">
-          <label for="alamat"><strong>Alamat</strong></label>
-          <input id="alamat" 
-                 v-model="alamat" 
-                 type="alamat" 
-                 name="alamat" />
+          <label for="address"><strong>Alamat</strong></label>
+          <input id="address" 
+                 v-model="address" 
+                 type="address" 
+                 name="address" />
         </div>
 
         <br>
@@ -90,9 +112,26 @@
 
 export default {
     name: "LoginPage",
-    components: {
-
+    data() {
+      return {
+        showPassword: false,
+        name: "",
+        password: null,
+        username:null,
+        email: "",
+        address: "",
+       };
+    },
+      computed: {
+        buttonLabel() {
+        return this.showPassword ? "Hide" : "Show";
         }
+      },
+      methods: {
+        toggleShow() {
+        this.showPassword = !this.showPassword;
+        }
+      } 
 };
 </script>
 
@@ -125,12 +164,12 @@ img {
   color: #353C78;
 }
 
-input[type=nama],
+input[type=name],
 input[type=username],
 input[type=email],
-input[type=numberphone],
-input[type=alamat],
- select {
+input[type=number_phone],
+input[type=address],
+select {
   width: 100%;
   padding: 3px 20px;
   margin: 3px 0;
@@ -140,8 +179,10 @@ input[type=alamat],
   box-sizing: border-box;
 }
 
-input[type=password], select {
-  width: 100%;
+input[type=password], 
+input[type=text],
+select {
+  width: 90%;
   padding: 3px 20px;
   margin: 3px 0;
   display: inline-block;
@@ -159,5 +200,10 @@ input[type=password], select {
   background: linear-gradient(90deg, #F75000 0%, #FF9F71 100%);
   box-shadow: 0px 10px 40px rgba(54, 78, 164, 0.25);
 }
+
+.buttonEyes{
+  margin: -34px 0 0 525px
+}
+
 </style>
 

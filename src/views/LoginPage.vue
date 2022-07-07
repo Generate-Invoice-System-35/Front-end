@@ -32,14 +32,42 @@
 
        <div class="input-group">
           <label for="input-username"><strong>Username</strong></label>
-          <input v-model="username" type="text" />
+          <input id="username" 
+                 v-model="username" 
+                 type="username" 
+                 name="username" />
         </div>
 
-        <div class="input-group">
-          <label for="input-password"><strong>Password</strong></label>
-          <input v-model="password" type="password" />
-          <button onclick="myFunction()">Show Password</button>
-        </div>
+        <label class="label">Password</label>
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <input
+                    v-if="showPassword"
+                    type="text"
+                    class="input"
+                    v-model="password"
+                  />
+                  <input
+                    v-else
+                    type="password"
+                    class="input"
+                    v-model="password"
+                  />
+                </div>
+                <div class="buttonEyes">
+                  <button class="button" @click="toggleShow">
+                    <span class="icon is-medium is-right">
+                      <i
+                        class="fas"
+                        :class="{
+                          'fas-eye-slash-fill': showPassword,
+                          'fas-eye-fill': !showPassword
+                        }"
+                      ></i>> 
+                    </span>
+                  </button>
+                </div>
+              </div>
 
         <br>
         <router-link class="SignINButton" to="/dashboard" tag="button">SIGN IN</router-link>
@@ -52,9 +80,23 @@
 
 export default {
     name: "LoginPage",
-    components: {
-
+    data() {
+      return {
+        showPassword: false,
+        password: null,
+        username:null,
+       };
+    },
+      computed: {
+        buttonLabel() {
+        return this.showPassword ? "Hide" : "Show";
         }
+      },
+      methods: {
+        toggleShow() {
+        this.showPassword = !this.showPassword;
+        }
+      } 
 };
 </script>
 
@@ -86,8 +128,8 @@ img {
   text-align: center;
 }
 
-input[type=text],
- select {
+input[type=username],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -97,8 +139,10 @@ input[type=text],
   box-sizing: border-box;
 }
 
-input[type=password], select {
-  width: 100%;
+input[type=password], 
+input[type=text],
+select {
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -115,5 +159,9 @@ input[type=password], select {
   /* Orange (Gradient) */
   background: linear-gradient(90deg, #F75000 0%, #FF9F71 100%);
   box-shadow: 0px 10px 40px rgba(54, 78, 164, 0.25);
+}
+
+.buttonEyes{
+  margin: -47px 0 0 525px
 }
 </style>
