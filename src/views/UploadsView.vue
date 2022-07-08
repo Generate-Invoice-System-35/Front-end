@@ -41,6 +41,7 @@
             border-color: coral;
           "
         >
+        
           <div class="card-body" style="color: darkorange; text-align: center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +63,7 @@
             <h4><strong>Select a file to upload</strong></h4>
             <p>or drag and drop it here</p>
           </div>
+          
         </div>
       </div>
     </div>
