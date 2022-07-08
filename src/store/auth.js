@@ -50,6 +50,7 @@ const actions = {
 
     return result;
   },
+
   login(store, credentials) {
     return axios
       .post(`${apiHost}/login`, {
@@ -81,10 +82,12 @@ const actions = {
         store.commit("setInfo", error);
       });
   },
+  
   logout(store) {
     store.commit("setToken", "");
     return true;
   },
+
   // checkUser(store, id) {
   //   return axios
   //     .get(`${apiHost}/api/users/${id}`, {
@@ -114,6 +117,7 @@ const actions = {
   //       store.commit("setInfo", error);
   //     });
   // },
+
 };
 
 export default {

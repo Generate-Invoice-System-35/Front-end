@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" style="margin: 0 0 0 290px">
     <div class="d-none d-md-block">
       <div class="row mt-4">
         <div class="col-lg-5 ml-auto mt-2">
@@ -7,7 +7,7 @@
             <div class="justify-content-center align-self-center">
               <h1>
                 <strong
-                  >Convert quotes into invoices
+                  >Convert quotes into <span style="color:#FF9F71">invoice</span>
                   with easy and simple steps.
                 </strong>
               </h1>

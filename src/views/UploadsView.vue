@@ -2,7 +2,8 @@
   <div>
     <NavbarLogin />
     <br />
-
+    <router-link class="backButton" to="/dashboard" tag="button" > Back </router-link>
+    
     <div class="container">
       <h2>Upload File</h2>
     </div>
@@ -61,4 +62,10 @@ export default {
 </script>
 
 <style>
+.backButton{
+  margin: -10px 0 0 50px;
+  padding: 10px 40px 10px 40px;
+  background: linear-gradient(90deg, #F75000 0%, #FF9F71 100%);
+  color: white;
+}
 </style>
