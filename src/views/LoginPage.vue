@@ -89,24 +89,29 @@ export default {
         return this.showPassword ? "Hide" : "Show";
         }
       },
+
       methods: {
         toggleShow() {
         this.showPassword = !this.showPassword;
         },
 
+      
         async doLogin() {
-          const result = await this.$store.dispatch("auth/login", {
-            username: this.username,
-            password: this.password,
-          });
+          const payload = {username: this.username,
+                          password: this.password,}
+          const result = await this.$store.dispatch("auth/login", {data: payload}) 
+          //  {
+          //   username: this.username,
+          //   password: this.password,
+          // });
 
           if (result) {
           this.$router.push('/dashboard');
           } else {
             this.errorText = this.$store.state.auth.info;
           }
-        }
-      } 
+        },
+      },
 
 };
 </script>
