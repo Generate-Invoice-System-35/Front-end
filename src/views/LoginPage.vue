@@ -63,6 +63,7 @@
               </div>
 
         <br>
+        <p v-if="errorText" class="error-text">{{ errorText }}</p>
         <button class="SignINButton" @click="doLogin()">SIGN IN</button>
     </div>
 
@@ -78,6 +79,7 @@ export default {
         showPassword: false,
         password: null,
         username:null,
+        errorText: "",
        };
     },
       computed: {
