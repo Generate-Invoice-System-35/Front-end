@@ -8,13 +8,14 @@
 
       <ul class="navbar-nav ml-auto mr-3">
         <li class="nav-item">
-          <router-link class="nav-link" to="/"> Home </router-link>
+          <router-link class="nav-link" to="/" style="padding-left:84.5rem"> Home </router-link>
         </li>
         <li class="nav-item">
           <router-link class="btn btn-light mr-3" style="color: black;" to="/login">
             Sign In
           </router-link>
         </li>
+        <div style="padding-right:10px"></div>
         <br />
         <li class="nav-item">
           <router-link class="btn btn-warning" style="background-color:#ff9f71; color: white;" to="/register">

@@ -9,7 +9,7 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <ul class="navbar-nav ml-auto mr-3">
             <li class="nav-item" >
-              <router-link class="nav-link" to="/" style="padding-right:54.5rem"> Home </router-link>
+              <router-link class="nav-link" to="/" style="padding-left:45.5rem"> Home </router-link>
             </li>
           </ul>
        </b-navbar>

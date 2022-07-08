@@ -6,7 +6,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <ul class="navbar-nav ml-auto mr-3">
         <li class="nav-item">
-          <router-link class="nav-link" to="/"> Home </router-link>
+          <router-link class="nav-link" to="/" style="padding-left:88.5rem"> Home </router-link>
         </li>
 
         <b-dropdown
