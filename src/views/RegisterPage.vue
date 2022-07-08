@@ -65,7 +65,7 @@
 
                 <div class="buttonEyes">
                   <button class="buttonEye" @click="toggleShow">
-                      <b-icon icon='eye-slash' variant="light"></b-icon>
+                      <b-icon icon='eye' variant="light"></b-icon>
                   </button>
                 </div>
               </div>
@@ -95,7 +95,7 @@
         </div>
 
         <br>
-         <button class="SignUpButton" @click="doRegister()" >Start</button>
+         <button class="SignUpButton" @click="doRegister" >Start</button>
     </div>
 
   </div>

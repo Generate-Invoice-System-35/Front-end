@@ -57,7 +57,7 @@
 
                 <div class="buttonEyes">
                   <button class="buttonEye" @click="toggleShow">
-                      <b-icon icon='eye-slash' variant="light"></b-icon>
+                      <b-icon icon='eye' variant="light"></b-icon>
                   </button>
                 </div>
               </div>
@@ -66,7 +66,7 @@
         
         <br>
         <p v-if="errorText" class="error-text">{{ errorText }}</p>
-        <button class="SignINButton" @click="doLogin()">SIGN IN</button>
+        <button class="SignINButton" @click="doLogin">SIGN IN</button>
     </div>
 
   </div>
