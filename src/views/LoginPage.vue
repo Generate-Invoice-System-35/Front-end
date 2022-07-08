@@ -61,7 +61,9 @@
                   </button>
                 </div>
               </div>
-
+        <br>
+        <p>Don't have an account? <router-link class="gotoRegister" to="/register">Register Here</router-link></p>
+        
         <br>
         <p v-if="errorText" class="error-text">{{ errorText }}</p>
         <button class="SignINButton" @click="doLogin()">SIGN IN</button>
@@ -92,18 +94,18 @@ export default {
         this.showPassword = !this.showPassword;
         },
 
-          async doLogin() {
-            const result = await this.$store.dispatch("auth/login", {
-              username: this.username,
-              password: this.password,
-            });
+        async doLogin() {
+          const result = await this.$store.dispatch("auth/login", {
+            username: this.username,
+            password: this.password,
+          });
 
-            if (result) {
-              this.$router.push('/dashboard');
-            } else {
-              this.errorText = this.$store.state.auth.info;
-            }
+          if (result) {
+          this.$router.push('/dashboard');
+          } else {
+            this.errorText = this.$store.state.auth.info;
           }
+        }
       } 
 
 };
@@ -183,4 +185,5 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 </style>

@@ -114,6 +114,7 @@ export default {
         email: "",
         phone_number: "",
         address: "",
+        errotText: "",
        };
     },
       computed: {
