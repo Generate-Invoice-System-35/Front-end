@@ -17,6 +17,7 @@
     <br>
     <br>
     <h1 style="padding-left: 35px"><strong>Register</strong></h1>
+    <br><br>
 
 
     <div class="loginForm">
