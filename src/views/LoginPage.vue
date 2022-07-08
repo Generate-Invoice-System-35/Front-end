@@ -97,8 +97,10 @@ export default {
 
       
         async doLogin() {
-          const payload = {username: this.username,
-                          password: this.password,}
+          const payload = {
+            username: this.username,
+            password: this.password,
+            }
           const result = await this.$store.dispatch("auth/login", {data: payload}) 
           //  {
           //   username: this.username,
