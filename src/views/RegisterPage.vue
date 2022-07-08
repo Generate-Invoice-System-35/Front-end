@@ -181,7 +181,7 @@ img {
 input[type=name],
 input[type=username],
 input[type=email],
-input[type=number_phone],
+input[type=phone_number],
 input[type=address],
 select {
   width: 100%;
