@@ -17,8 +17,7 @@ const mutations = {
 
 const actions = {
   register(store, credentials) {
-    const result = axios
-      .post(
+    const result = axios.post(
         `${apiHost}/register`,
         {
           name: credentials.name,
@@ -52,8 +51,8 @@ const actions = {
   },
 
   login(store, credentials) {
-    return axios
-      .post(`${apiHost}/login`, {
+    // console.log(credentials)
+    return axios.post(`${apiHost}/login`, {
         username: credentials.username,
         password: credentials.password,
       })
