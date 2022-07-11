@@ -96,7 +96,9 @@ export default {
         },
 
       
-        async doLogin() {
+        async doLogin() 
+        {
+          console.log(this)
           const payload = {
             username: this.username,
             password: this.password,

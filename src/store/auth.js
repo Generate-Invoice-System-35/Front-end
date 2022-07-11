@@ -50,7 +50,7 @@ const actions = {
     return result;
   },
   login(store, credentials) {
-    console.log(credentials)
+    // console.log(credentials)
     return axios.post(`${apiHost}/login`, {
         username: credentials.username,
         password: credentials.password,

@@ -7,7 +7,7 @@ Vue.use(Vuex);
 const persistedDataState = createPersistedState({
   paths: ["auth.token"],
 });
-
+console.log(auth)
 export default new Vuex.Store({
   plugins: [persistedDataState],
   modules: {
