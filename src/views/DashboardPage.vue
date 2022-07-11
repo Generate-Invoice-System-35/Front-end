@@ -61,3 +61,9 @@ import NavbarLogin from "@/components/NavbarLogin.vue";
 },
 };
 </script>
+
+<style scoped>
+.contentTables{
+  padding: 74px;
+}
+</style>

@@ -15,7 +15,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="name in info" :key="name.Country">
+          <tr v-for="name in info" :key="name.Number">
+            <td>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="generate" />
+              </div>
+            </td>
             <td>{{name.Number}}</td> <!--Ganti bagian table nya-->
             <td>{{name.Customer}}</td>
             <td>{{name.InvoiceDate}}</td>
