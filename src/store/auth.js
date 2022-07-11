@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiHost = `http://api.calorilin.me`;
+const apiHost = `https://api.calorilin.me`;
 
 const state = () => ({
   token: "",
