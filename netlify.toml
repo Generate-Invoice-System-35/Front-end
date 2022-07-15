@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/api/"
+to = "http://api.calorilin.me/service/:splat"
+status = 200
+force = true
+headers = {x-from = "Netlify"}
