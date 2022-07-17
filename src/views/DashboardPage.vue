@@ -21,8 +21,8 @@
                  <b-icon icon='search' style="color: #F75000; margin: -45px 0 45px 850px;"></b-icon>
         </div>
 
-        <b-icon icon='filter' style="color: #F75000; margin: -50px 0px 25px 810px;"></b-icon>
-        <div style="margin: -60px 0 0 825px">
+        <div style="margin: -35px 0 0 805px">
+        <span><b-icon icon='filter' style="color: #F75000;"></b-icon></span>
         <b-dropdown
           id="dropdown-right"
           right
@@ -40,8 +40,6 @@
         </div>
       </div>
 
-
-    <br />
 
     <TableVue />
   </div>

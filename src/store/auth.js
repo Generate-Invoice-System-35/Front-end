@@ -53,8 +53,8 @@ const actions = {
   login(store, credentials) {
     // console.log(credentials)
     return axios.post(`${apiHost}/login`, {
-        username: credentials.username,
-        password: credentials.password,
+        username: credentials.data.username,
+        password: credentials.data.password,
       })
       .then((response) => {
         if (response.status === 200) {

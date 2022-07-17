@@ -1,6 +1,6 @@
 <template>
     <div class="table">
-      <div><br></div>
+      <div></div>
       <table class="invoice">
         <thead>
           <tr>
@@ -36,6 +36,7 @@
 </template>
 
 <script>
+// import $ from "jquery";
 export default {
   name: "TableVue",
   data() {
@@ -54,13 +55,25 @@ export default {
       ]
     }
   }
+
+    //     mounted() {
+    //     this.getInvoice(); //bagian apa?
+    //     $("#datatable").DataTable({
+    //     lengthMenu: [
+    //     [5, 10],
+    //     [5, 10],
+    //     ],
+    //   });
+    // },
 };
 
 </script>
 
+  
+
 <style scopped>
 .table{
-  padding: 74px;
+  padding: 20px 74px 10px 74px;
 }
 
 .invoice{
