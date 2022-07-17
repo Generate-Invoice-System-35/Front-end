@@ -15,20 +15,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="name in info" :key="name.Number">
+          <tr v-for="(news, id) in newslist" :key="id">
             <td>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="generate" />
               </div>
             </td>
-            <td>{{name.Number}}</td> <!--Ganti bagian table nya-->
-            <td>{{name.Customer}}</td>
-            <td>{{name.InvoiceDate}}</td>
-            <td>{{name.DueDate}}</td>
-            <td>{{name.Email}}</td>
-            <td>{{name.phone_number}}</td>
-            <td>Rp {{name.Total}}</td>
-            <td>{{name.PaymentStatue}}</td>
+            <td>{{ news.publishedAT }}</td> <!--Ganti bagian table nya-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -36,35 +36,49 @@
 </template>
 
 <script>
-// import $ from "jquery";
+import $ from "jquery";
 export default {
-  name: "TableVue",
-  data() {
-    return {
-      info: [
-        { Number: "1", Customer: "Angga", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
-        { Number: "2", Customer: "Intan", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Not Paid", },
-        { Number: "3", Customer: "Aurellia", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
-        { Number: "4", Customer: "Murfid", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Paid", },
-        { Number: "5", Customer: "Prila", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
-        { Number: "6", Customer: "Jovin", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
-        { Number: "7", Customer: "Rima", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Pending", },
-        { Number: "8", Customer: "Made", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Paid", },
-        { Number: "9", Customer: "Novita", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Not Paid", },
-        { Number: "10", Customer: "Kristina", InvoiceDate: "20-3-2022", DueDate: "11-7-2022", Email: "test123@gmail.com", phone_number: "081123456789", Total: "110.000", PaymentStatue: "Expire", },
-      ]
-    }
-  }
 
-    //     mounted() {
-    //     this.getInvoice(); //bagian apa?
-    //     $("#datatable").DataTable({
-    //     lengthMenu: [
-    //     [5, 10],
-    //     [5, 10],
-    //     ],
-    //   });
-    // },
+    data () {
+      return{};
+    },
+  
+  computed: {
+    listsNews() { 
+      return this.$store.state.invoice.lists;
+    },
+    errorMessage() {
+      if (this.$store.state.news.error !=="") {
+        return true;
+      }
+      return false;
+      },
+    },
+    
+    methods: {
+        
+        async doLogin() {
+          const result = await this.$store.dispatch("auth/logout");
+          
+          if (result) {
+            alert("logout Sukses");
+            this.$router.push("/");
+          } else {
+            this.errorTesxt = this.$router.state.auth.info;
+          }
+        },
+      },
+  
+
+        mounted() {
+        this.getInvoice(); 
+        $("#datatable").DataTable({
+        lengthMenu: [
+        [5, 10],
+        [5, 10],
+        ],
+      });
+    },
 };
 
 </script>

@@ -20,12 +20,12 @@ const actions = {
     const result = axios.post(
         `${apiHost}/register`,
         {
-          name: credentials.name,
-          username: credentials.username,
-          password: credentials.password,
-          email: credentials.email,
-          phone_number: credentials.phone_number,
-          address: credentials.address,
+          name: credentials.data.name,
+          username: credentials.data.username,
+          password: credentials.data.password,
+          email: credentials.data.email,
+          phone_number: credentials.data.phone_number,
+          address: credentials.data.address,
         }
         // {
         //   headers: {

@@ -29,8 +29,7 @@
           text="Filter"
           variant="outline-dark"
           class="m-2"
-          size="sm"
-          
+          size="sm" 
         >
           <b-dropdown-item>Unpaid</b-dropdown-item>
           <b-dropdown-item>Paid</b-dropdown-item>
