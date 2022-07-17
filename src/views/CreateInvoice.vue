@@ -2,6 +2,7 @@
   <div>
     <NavbarLogin />
     <br />
+    <router-link class="backButton" to="/dashboard" > Back </router-link>
 
     <hr />
     <div class="container">
