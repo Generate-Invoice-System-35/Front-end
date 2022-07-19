@@ -129,14 +129,17 @@ export default {
         },
 
         async doRegister() {
-          const result = await this.$store.dispatch("auth/register", {
+          console.log(this)
+          const payload = {
             name: this.name,
             username: this.username,
             password: this.password,
-            email: this.password,
+            email: this.email,
             phone_number: this.phone_number,
             address: this.address,
-          });
+            }
+          const result = await this.$store.dispatch("auth/register", {data: payload}) 
+
           if (result) {
             alert("Register telah berhasil");
             this.$router.push("/dashboard");
