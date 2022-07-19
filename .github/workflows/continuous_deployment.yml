@@ -43,4 +43,4 @@ jobs:
           docker container rm generate-invoices-frontend
           docker rmi mdrahano12/generate-invoices-frontend:1.0
           docker pull mdrahano12/generate-invoices-frontend:1.0
-          docker run -it -dp 8080:8080 --rm --name generate-invoices-frontend --detach mdrahano12/generate-invoices-frontend:1.0
+          docker run -it -dp 80:8080 --rm --name generate-invoices-frontend --detach mdrahano12/generate-invoices-frontend:1.0
