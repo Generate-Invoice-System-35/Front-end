@@ -2,10 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UploadsView from '../views/UploadsView.vue'
-import CreateInvoice from '../views/CreateInvoice.vue'
 import LoginPage from '../views/LoginPage.vue'
 import RegisterPage from '../views/RegisterPage.vue'
-import PreviewInvoice from '../views/PreviewInvoice.vue'
 import DashboardPage from '../views/DashboardPage.vue'
 
 Vue.use(VueRouter)
@@ -22,11 +20,6 @@ const routes = [
     component: UploadsView
   },
   {
-    path: '/createinvoice',
-    name: 'createinvoice',
-    component: CreateInvoice
-  },
-  {
     path: '/login',
     name: 'loginpage',
     component: LoginPage
@@ -35,11 +28,6 @@ const routes = [
     path: '/register',
     name: 'registerpage',
     component: RegisterPage
-  },
-  {
-    path: '/previewinvoice',
-    name: 'previewinvoice',
-    component: PreviewInvoice
   },
   {
     path: '/dashboard',
