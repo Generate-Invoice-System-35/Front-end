@@ -1,4 +1,4 @@
-# capstones
+# capstone
 
 ## Project setup
 ```
