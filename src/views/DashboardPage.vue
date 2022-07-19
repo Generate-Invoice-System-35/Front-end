@@ -9,7 +9,7 @@
       <router-link class="upload" to="/uploads" tag="button" style="color:white;">Upload</router-link>
       </div>
       <div class="buttonGenerate">
-      <router-link class="generate" to="/createinvoice" tag="button" style="color:white;">Generate</router-link>
+      <router-link class="generate" tag="button" style="color:white;">Generate</router-link>
       </div>
 
         <div class="filterAndSearach">

@@ -17,7 +17,7 @@ const mutations = {
 const actions = {
   fetchListNews(store) {
     axios
-      .get(`https://api.calorilin.me/invoice`)
+      .get(`http://api.calorilin.me/invoice`)
       .then((response) => {
         console.log("response: ", response);
         // response.data.articles
