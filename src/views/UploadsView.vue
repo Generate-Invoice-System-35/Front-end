@@ -2,7 +2,7 @@
   <div>
     <NavbarLogin />
     <br />
-    <router-link class="backButton" to="/dashboard" > Back </router-link>
+    <router-link class="backButton" to="/" > Back </router-link>
     
     <div class="container">
       <h2>Upload File</h2>
